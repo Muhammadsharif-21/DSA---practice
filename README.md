@@ -1,4 +1,3 @@
-# DSA---practice
 # DSA Practice
 Practicing Data Structures and Algorithms as part of my 
 AI degree at Sindh University.
