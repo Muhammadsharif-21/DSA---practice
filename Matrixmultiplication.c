@@ -2,9 +2,9 @@
 
   int main()
   { 
-     int a[5][5], b[5][5], c[5][5];
+     int a[5][5], b[5][5], c[5][5];  //assigning arr the multidimensional arrays;
      int i,j,k,m,n,p,p1;
-     printf("Enter number of Rows in matrix A: ");
+     printf("Enter number of Rows in matrix A: ");      // taking the number of rows and columns in both matrices by the user 
      scanf("%d",&m);
      printf("Enter number of columns in matrix A: ");
      scanf("%d",&p);
@@ -13,7 +13,7 @@
      printf("Enter number of columns in matrix B: ");
      scanf("%d",&n);
      
-      if(p!=p1)
+      if(p!=p1)         // multiplication rule    
       printf("Multiplication not possible:\n");
       else
       {
@@ -43,12 +43,13 @@
         c[i][j]= 0;
         for(k=0; k<p; k++)
         {
-        c[i][j] = c[i][j] + a[i][k] * b[k][j];
+        c[i][j] = c[i][j] + a[i][k] * b[k][j];     // Initial value of C[i][j] was 0
+                                                   // previous value of c(i,j) +  a[i][k] * b[k][j]; 
         }
       }
       }
       
-      printf("After matrix multiplication Matrix c contains:\n");
+      printf("After matrix multiplication Matrix c contains:\n"); 
       for(i=0; i<m; i++)
        {
         for(j=0; j<n; j++)
